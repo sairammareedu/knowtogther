@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #7de2fc, #b9b6e5);
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.brand-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 34px;
+  color: #a259ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login-box h2 {
+  
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: white;
+}
+
+
+.subtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #a259ff, #ff6ec4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #ffb300;
+  transform: scale(1.03);
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.outline:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.03);
+}
+
+.google {
+  background: white;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+
+.google:hover {
+  background: #f1f1f1;
+  transform: scale(1.03);
+}

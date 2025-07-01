@@ -1,0 +1,44 @@
+.sidebar {
+  width: 260px;
+  background: linear-gradient(to bottom, #4e5ae8, #c86dd7);
+  color: white;
+  padding: 1.5rem 1rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 100;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.profile-section h3 {
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 600;
+}
+
+.profile-section p {
+  font-size: 0.85rem;
+  color: #e0e0e0;
+}
+
+.menu p {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.menu p:hover {
+  color: #ffeaa7;
+}

@@ -1,0 +1,82 @@
+.create-post-form {
+  background-color: var(--bg-color, #ffffff);
+  color: var(--text-color, #333);
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.create-post-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.create-post-form input[type="text"],
+.create-post-form textarea,
+.create-post-form input[type="file"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: var(--input-bg, #f9f9f9);
+  color: var(--text-color, #333);
+}
+
+.create-post-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.create-post-form button {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create-post-form button:hover {
+  background: linear-gradient(90deg, #5e1ecf, #c5057b);
+}
+
+.create-post-form p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+/* Light Mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --input-bg: #f0f0f0;
+}
+
+/* Dark Mode (toggle via JS or class) */
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --input-bg: #1e1e1e;
+}
+
+
+@media (max-width: 640px) {
+  .create-post-form {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
